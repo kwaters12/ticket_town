@@ -1,0 +1,12 @@
+@import 'bootstrap';
+
+.navbar-default { background-color: #C77966; border: none; border-radius: none;}
+.navbar {
+  a {color: #E3CDA4; }
+  a:hover {color: white; text-decoration: none;}
+}
+body {background-color: #2F343B; color: #E3CDA4;}
+section {width: 100%; background-color: #703030; padding: 10px; margin-top: 10px; height: 100px;}
+
+#name {float: right; margin-top: 10px; margin-right: 50px; display: block;}
+#resolved {float: right;}

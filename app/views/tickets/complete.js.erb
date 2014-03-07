@@ -1,0 +1,14 @@
+
+$(this).on('click', function () {
+  var Status = $(this).val();
+  $.ajax({
+    if Status == true {
+      Status = false;
+      $(this).html("Mark Resolved");
+    } else {
+      Status = true;
+      $(this).text("Resolved");
+      }
+  });
+});
+

@@ -1,0 +1,16 @@
+%h3 Ticket Town:
+%hr
+-@tickets.each do |ticket|
+  %section
+    = ticket.title
+    %br
+    = ticket.body        
+    %br
+    Created by:
+    = ticket.user.name_display
+    #resolved
+      - if ticket.status == false
+        = link_to "Mark Resolved?", complete_ticket_path(ticket)
+      - else
+        = link_to "Resolved", complete_ticket_path(ticket)
+%a.btn.btn-default{href: new_ticket_path}New Ticket
